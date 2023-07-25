@@ -40,7 +40,7 @@ else :
 a=int(input())
 b=int(input())
 c=int(input())
-#maxnum=if(a if(a>b) else(a if(a>c) else c))
+maxnum=(a if(a>c) else c)if(a>b) else (b if(b>c) else c)
 
 #calculate charge for internet consumption
 
