@@ -1,5 +1,5 @@
 #22mia1111
-'''
+
 #if statement marks calc
 
 mark=int(input())
@@ -63,15 +63,24 @@ a=21
 while a<31:
     print(a)
     a+=1
- '''   
+
 #reversing a number
 
 n=int(input())
+a=n
 rev=0
 while n!=0:
     m=n%10
     rev=rev*10+m
     n=n//10
-print("reversed number is",rev)
+print("reversed number is",rev,"\n")
+
+#palindrome
+print("given number",a)
+if a==rev:
+    print("palindrome number")
+else:
+    print("not a palindrome")
+    
 
 
