@@ -1,4 +1,4 @@
-"""
+
 #class 5
 #22mia1111
 
@@ -73,8 +73,7 @@ else:
 import re
 str="ABCDS1234Z"
 print("valid") if re.match("^[A-Z]{5}[0-9]{4}[A-Z]$",str) else print("invalid")
-    
-"""
+  
 #CHECK FOR floating point number
 import re
 str="-05.5"
