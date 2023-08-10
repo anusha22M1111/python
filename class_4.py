@@ -10,7 +10,7 @@ S[I:J]  i to j numbers will be displayed
 "a %s parrot" %kind        string formatting
 "a {s} parrot" .format(kind)
 S.find('pa')
-S.rstrinp()     remove white space to the right
+S.rstrip()     remove white space to the right
 S.replace('pa','xx')    replacement
 S.split(',')            split on delimiter
 S.isdigit(),isalpha()
