@@ -19,7 +19,8 @@ S.count('abd')  counts the number of letters
 S.endswith('?')    checks the last symbol/letter
 'spam'.join(strlist)   joins the strings
 ord()    will give the haskey value foe given string
-chr(89)   will covert hashkey code to character
+chr(89)   will give string for the hashkey
+
 
 #excersice 1
 s=r'a\n\ob\n\oc'
