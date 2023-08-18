@@ -23,10 +23,9 @@ print(tot)
 
 import re
 str=input()
-if len(str)>12 or len(str)<6:
-    print("invvalid")
+
 else:
-    if re.match("^((?=.*?[a-z])(?=.*?[0-9])(?=.*?[A-Z])(?=.*?[$#@]).{6})$",str):
+    if re.match(r"^((?=.*[a-z])(?=.*\d)(?=.*[A-Z])(?=.*?[$#@])[A-Za-z\d$@#]{6,12})$",str):
         print("valid")
     else:
         print("invalid")
