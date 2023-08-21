@@ -1,6 +1,6 @@
 #class_11
 #22mia1111
-'''
+
 #sorting algorithm
 def swap(a,b):
     temp=a
@@ -108,7 +108,7 @@ fw=wordcount("/home/ex5/sample1.txt")
 fl=linecount("/home/ex5/sample1.txt")
 print(fw)
 print(fl)
-'''
+
 #copy marks in csv file and copy the contents with tolal marks
 
 f1=("/home/ex5/Documents/pymark.csv")
