@@ -31,3 +31,15 @@ for i in range(n):
 print(l)
 print(l1)
 print(l2)
+
+#question_5
+def punc(a):
+    res=""
+    pun=".,?';:[{(!-)}]"
+    for x in a:
+        if x not in pun:
+            res+=x
+    return(res)
+str=input()
+b=punc(str)
+print(b)
