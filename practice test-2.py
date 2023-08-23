@@ -56,3 +56,12 @@ def punc(a):
 str=input()
 b=punc(str)
 print(b)
+#question_6:
+ #class_10
+#question_7:
+f1=open("D:\mtech-cse-ba\fall-2023-24\file.csv","r")
+fcontent=f1.readlines()
+f2 =open("D:\mtech-cse-ba\fall-2023-24\result.csv","w")
+f2.writelines(fcontent)
+f2.close()
+f1.close()
