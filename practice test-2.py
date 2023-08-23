@@ -10,13 +10,17 @@ t=str.count('T')
 d={'A':a,'G':g,'C':c,'T':t}
 print(d)
 
-#Q-2 capitalise first word
-strr=input()
-word=strr.split(" ")
-word.upper()
-print(word)
-
-
+#q-2
+str="have a good day!"
+'''print(str[0])
+a=str.split(" ")
+for i in range(len(a)):
+   a[i].replace(((a[i])[0]),((a[i])[0]).upper())
+print(a)
+.replace()
+'''
+a=str.title()
+print(a)
 
 #q-3 customer rating
 n=int(input())
