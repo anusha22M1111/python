@@ -35,6 +35,15 @@ for i in range(n):
 print(l)
 print(l1)
 print(l2)
+#q-4
+def gcd(a,b):
+    if b==0:
+        return a
+    else:
+        return gcd(b,a%b)
+m=int(input())
+n=int(input())
+print(gcd(m,n)) 
 
 #question_5
 def punc(a):
