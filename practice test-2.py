@@ -57,7 +57,43 @@ str=input()
 b=punc(str)
 print(b)
 #question_6:
- #class_10
+ import math
+x1=5
+x2=20
+x3=15
+y1=10
+y2=10
+y3=15
+
+def linear(x1,y1,x2,y2,x3,y3):
+    if(x1==x2==x3 or y1==y2==y3):
+        return 0
+    else:
+        return 1
+
+def dist(x1,y1,x2,y2):
+    a=math.pow(x1-x2,2)
+    b=math.pow(y1-y2,2)
+    dis=math.sqrt(a+b)
+    return(dis)
+
+def chec(x1,y1,x2,y2,x3,y3):
+    if dist(x1,y1,x2,y2)+dist(x2,y2,x3,y3)>dist(x1,y1,x3,y3):
+        return 1
+    elif dist(x1,y1,x2,y2)+dist(x1,y1,x3,y3)>dist(x2,y2,x3,y3):
+        return 1
+    elif dist(x2,y2,x3,y3)+dist(x1,y1,x3,y3)>dist(x1,y1,x2,y2):
+        return 1
+    else:
+        return 0
+
+def fin(x1,y1,x2,y2,x3,y3):
+    if linear(x1,y1,x2,y2,x3,y3)>0 and chec(x1,y1,x2,y2,x3,y3)>0:
+        print("yes")
+    else:
+        print("No")
+      
+fin(x1,y1,x2,y2,x3,y3)
 #question_7:
 f1=open("D:\mtech-cse-ba\fall-2023-24\file.csv","r")
 fcontent=f1.readlines()
