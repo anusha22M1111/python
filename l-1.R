@@ -95,6 +95,7 @@ le=list(regno=1:2,name=v2,noc=3:4,marks=c(11,67,89,56,80))
 le
 le1=le[[1]]
 le11=le[[4]]
+le$marks[1]
 le2=le[[2]][1]
 le3=le[[4]][1]
 le[[4]][5]=5+le[[4]][5]
