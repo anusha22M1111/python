@@ -1,0 +1,90 @@
+---
+title: "22MIA1111"
+author: "anusha"
+date: "2023-11-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+rm=(list=ls())
+```
+
+```{r pressure, echo=FALSE}
+install.packages("MASS")
+```
+
+
+```{r pressure, echo=FALSE}
+library(MASS)
+```
+
+
+```{r pressure, echo=FALSE}
+m=mtcars
+```
+
+
+```{r pressure, echo=FALSE}
+cov(m$mpg,m$hp)
+cor(m$mpg,m$hp)
+cor(m$hp,m$hp)
+```
+
+
+```{r pressure, echo=FALSE}
+d=airquality
+f=table(d$Month)
+plot(f)
+
+```
+
+
+```{r pressure, echo=FALSE}
+plot(d)
+```
+
+
+```{r pressure, echo=FALSE}
+barplot(d$Ozone,main="ozone levels")
+```
+
+
+```{r pressure, echo=FALSE}
+boxplot(d[,1:4],main="multiple box plot")
+```
+
+
+```{r pressure, echo=FALSE}
+library(ggplot2)
+```
+
+
+```{r pressure, echo=FALSE}
+ggplot(iris,aes(x=Sepal.Length,y=Petal.Length,col=Species,shape=Species))+geom_point()
+
+```
+
+
+```{r pressure, echo=FALSE}
+ggplot(d=mtcars,mapping=aes(x=wt,y=mpg,col))+geom_point()+geom_smooth(color="pink")
+```
+
+
+```{r pressure, echo=FALSE}
+ggplot(d=mtcars,mapping=aes(x=mpg))+geom_bar()
+```
+
+
+```{r pressure, echo=FALSE}
+
+```
+
+
+```{r pressure, echo=FALSE}
+```
+

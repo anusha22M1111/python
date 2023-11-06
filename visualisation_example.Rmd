@@ -1,0 +1,70 @@
+---
+title: "22mia1111"
+author: "anusha"
+date: "2023-11-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+rm(list=ls())
+```
+
+
+```{r}
+library(MASS)
+```
+
+
+```{r}
+n=na.omit(survey)
+```
+
+
+```{r}
+print(n)
+nn=n$Sex
+print(nn)
+```
+
+
+```{r}
+help(survey)
+```
+
+
+```{r}
+f=table(n$Sex)
+barplot(f,main="male and female participants",ylab="frequency",col="pink")
+
+```
+
+
+```{r}
+r=table(n$W.Hnd)
+barplot(r,main="left and right handers",ylab="count",col="pink")
+```
+
+
+```{r}
+barplot(f,r,main="female left handers and male left handers",ylab="count",col="pink")
+
+```
+
+
+```{r}
+hist(n$Age,main="Age distribution",xlab="Age range",ylab="frequency")
+```
+
+
+```{r}
+plot(n$Wr.Hnd,n$Age)
+```
+
+
+```{r}
+boxplot(n$Pulse,main="pulse",ylab="beats per min")
+```
+
