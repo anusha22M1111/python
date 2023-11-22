@@ -1,6 +1,30 @@
 #class 9
 #22mia1111
 
+#sets
+
+#an unordered collection of unique and immutable object that supports operations
+#operations
+union         |
+intersection  &
+difference    -
+s={1,2,3,4,5}
+s=set()   #empty set
+d={}      #dictionary
+s.add()   #adding element in set
+
+#reading values for set
+n=int(input())
+s=set()
+for i in range(n):
+    val=int(input())
+    #s.add(val)
+    s=s|{val}
+print(s)
+print(len(s))
+
+#indexing and slicing is not permitted in set
+
 
 #intersection
 s2=s2 &{1,3}
