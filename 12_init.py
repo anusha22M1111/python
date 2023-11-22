@@ -1,6 +1,6 @@
 #class_12
 #22mia1111
-'''
+''
 #class
 class classname:
     statement-1
